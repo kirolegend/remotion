@@ -1,0 +1,86 @@
+@charset "UTF-8";
+/**
+ * Accordion v3.3.4
+ * Lightweight and accessible accordion module created in pure Javascript
+ * https://github.com/michu2k/Accordion
+ *
+ * Copyright (c) Michał Strumpf
+ * Published under MIT License
+ */
+
+.ac{
+  /* margin-top:8px; */
+  box-sizing:border-box
+}
+.ac .ac-header{
+  margin:0;
+  padding:0
+}
+.ac .ac-trigger{
+  color: #fff;
+  text-align:left;
+  width:100%;
+  /* padding:0px 32px 0px 0px; */
+  display:block;
+  cursor:pointer;
+  background-color:transparent;
+  transition:color .25s ease;
+  position:relative;
+  text-decoration:none;
+  margin:0;border:0
+}
+.ac .ac-trigger::after{
+  text-align:center;
+  width:15px;
+  -webkit-transform:translate(0,-50%);transform:translate(0,-50%);
+  position:absolute;
+  right:10px;top:50%
+}
+.ac .ac-trigger:focus{
+  color:#8a8a8a
+}
+.ac .ac-panel{
+  overflow:hidden;
+  transition-property:height,visibility;transition-timing-function:ease
+}
+.ac .ac-panel .ac-text{
+  font:15px/24px Arial,sans-serif;
+  color:#111;
+  padding:8px;
+  margin:0
+}
+.ac.js-enabled .ac-panel{
+  visibility:hidden
+}
+.ac.is-active .ac-panel{
+  visibility:visible
+}
+
+
+.list{
+  padding: 0;
+  list-style-type: none;
+}
+.list_item{
+  background-color: #004098;
+  border: none;
+  padding: 10px 0px;
+}
+.list__item-title a{
+  font-size: 16px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 400;
+  margin-left: 30px;
+}
+.list__item-title svg{
+  margin-top: 8px;
+  margin-left: 23px;
+}
+.list__item-text a{
+  padding-top: 10px;
+  margin-left: 15px;
+  color: #fff;
+  font-size: 14px;
+  display: block;
+}

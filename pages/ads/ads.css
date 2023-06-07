@@ -1,0 +1,259 @@
+@font-face {
+  font-weight: 700;
+  font-family: Helvetica;
+  src: url("../../fonts/HelveticaBold.ttf");;
+}
+@font-face {
+  font-weight: 400;
+  font-family: Helvetica;
+  src: url("../../fonts/HelveticaRegular.ttf");;
+}
+@font-face {
+  font-weight: 300;
+  font-family: Helvetica;
+  src: url("../../fonts/Helvetica-Light.ttf");;
+}
+
+*{
+  padding: 0;
+  margin: 0;
+}
+/* main{
+  width: 1218px;
+  margin: auto;
+} */
+.main_bg{
+  width: 100%;
+  height: 400px;
+  background: url("../../img/bg/ads_bg.png");
+  background-size: cover;
+  display: flex;
+  align-items: center;
+}
+.main_bg h1{
+  max-width: 1218px;
+  width: 100%;
+  margin: auto;
+  font-size: 50px;
+  color: #004098;
+}
+
+.main_ads, .under_main{
+  max-width: 1218px;
+  width: 100%;
+  margin: auto;
+}
+.ads_btns{
+  display: flex;
+  gap: 35px;
+  flex-wrap: wrap;
+  margin: 100px 0px 60px  0px;
+}
+.ads_btns span{
+  padding: 15px 20px;
+  border-radius: 30px;
+  border: 1px solid #004098;
+  font-size: 14px;
+  font-weight: 400;
+  cursor: pointer;
+}
+.ads_btns span:hover{
+  color: #004098;
+}
+
+.active_btn{
+  background-color: #004098;
+  color: #fff;
+}
+.active_btn:hover{
+  color: #fff !important;
+}
+#container{
+  margin-top: 65px;
+}
+
+/* CARDS */
+.cards{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  /* grid-template-rows: 172px 172px 172px; */
+  gap: 20px;
+}
+
+.arrow{
+  position: absolute;
+  right: 36px;
+  bottom: 25px;
+}
+
+.card_item{
+  display: flex;
+  /* width: 594px; */
+  min-height: 170px;
+  box-shadow: 0px 2px 24px rgba(0, 64, 152, 0.1);
+  border-radius: 20px;
+  background: #fff;
+  position: relative;
+}
+.card_img{
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+.card_item h3{
+  font-weight: 700;
+  color: #0C101A;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+.card_item-text{
+  padding: 15px;
+  color: #4D5257;
+}
+.card_item-text p{
+  font-size: 14px;
+  margin-bottom: 10px;
+  font-weight: 300;
+}
+.card_item-text div{
+  font-size: 12px;
+  letter-spacing: 0.3px;
+  margin-bottom: 10px;
+}
+
+@media screen and (max-width: 1250px) {
+  .cards, .ads_btns, .main_bg h1{
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .cards{
+    grid-template-columns: 1fr;
+  }
+
+
+}
+@media screen and (max-width: 970px) {
+  .ads_btns{
+    gap: 10px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .cards{
+    width: 320px;
+    display: block;
+    margin: 0px auto;
+  }
+
+  .card_item{
+    display: block;
+    min-height: 150px;
+    max-height: 390px;
+    width: 320px;
+    margin-top: 20px;
+  }
+  .card_img{
+    border-bottom-left-radius: 0px;
+    border-top-right-radius: 20px;
+  }
+}
+@media screen and (max-width: 420px) {
+  .cards, .ads_btns, .main_bg h1{
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+.pagination_block{
+  display: flex;
+  justify-content: end;
+  margin: 30px 0px  100px 0px;
+}
+.pagination{
+  background-color: #F8F9FC;
+}
+.pagination a {
+  color: black;
+  float: left;
+  padding: 12px 15px;
+  font-size: 14px;
+  text-decoration: none;
+  transition: background-color .3s;
+  
+
+}
+
+.pagination a.active {
+  background-color: #004098;
+  color: white;
+}
+
+.pagination a:hover:not(.active) {background-color: #ddd;}
+
+.arrow_right{
+  transform: rotate(180deg);
+}
+.pagination a:nth-child(1){
+  border-radius:  6.24204px 0px 0px 6.24204px;
+}
+.pagination a:nth-last-of-type(1){
+  border-radius:  6.24204px 0px 0px 6.24204px;
+}
+
+
+
+
+
+
+/* STUDY.HTML */
+.title{
+  position: relative;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 38px;
+  margin-top: 100px;
+}
+h1 img{
+  position: absolute;
+  left: -50px;
+  top: 10px;
+}
+.d-flex{
+  display: flex;
+}
+.sub_title{
+  gap: 60px;
+  margin-top: 14px;
+  margin-bottom: 47px;
+}
+.sub_title p{
+  font-weight: 400;
+}
+.text_study{
+  color: #4D5257;
+  line-height: 30px;
+  font-size: 16px;
+}
+.napr{
+  margin-left: 23px;
+  line-height: 25px;
+}
+.btn_info{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 15px 30px;
+  color: #004098;
+  font-size: 18px;
+  font-weight: 500;
+  background-color: #fff;
+  border: none;
+  border-radius: 30px;
+  box-shadow: 4px 10px 30px rgba(0, 0, 0, 0.06);
+}
+.swiper {
+  width: 600px;
+  height: 300px;
+}
