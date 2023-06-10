@@ -51,7 +51,6 @@ function secondTabFunc(){
   container.innerHTML =` <p> qwerty</p>`
 }
 centerTabSecond.addEventListener('click', secondTabFunc)
-const centerId = document.getElementById('center_id')
 
 function thirdTab(){
   centerTabFirst.classList.remove('active_btn')
