@@ -37,7 +37,9 @@
   font-size: 50px;
   color: #004098;
 }
-
+.list_item{
+  padding-bottom: 30px !important;
+}
 .main_ads, .under_main{
   max-width: 1218px;
   width: 100%;

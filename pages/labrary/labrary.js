@@ -11,21 +11,20 @@ DG.then(function () {
 });
 
 
-console.log(swiper);
 
-const swiper = new Swiper('.swiper', {
+// const swiper = new Swiper('.swiper', {
 
-  // If we need pagination
-  pagination: {
-    el: '.swiper-pagination',
-  },
+//   // If we need pagination
+//   pagination: {
+//     el: '.swiper-pagination',
+//   },
 
-  // Navigation arrows
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-});
+//   // Navigation arrows
+//   navigation: {
+//     nextEl: '.swiper-button-next',
+//     prevEl: '.swiper-button-prev',
+//   },
+// });
 
 // Modal
 // let firstModal = document.getElementById('fisrtModal')

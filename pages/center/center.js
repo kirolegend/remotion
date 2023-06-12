@@ -23,7 +23,8 @@ function firstTab(){
   centerTabFirst.classList.add('active_btn')
   centerTabSecond.classList.remove('active_btn')
   centerTabThird.classList.remove('active_btn')
-  container.innerHTML =` <div class="post_container">
+  container.innerHTML =` 
+  <div class="post_container">
   <div class="text_director">
     <h1 class="title">
       <img src="../../img/icons/icon_title.svg" alt="">
@@ -48,7 +49,152 @@ function secondTabFunc(){
   centerTabFirst.classList.remove('active_btn')
   centerTabSecond.classList.add('active_btn')
   centerTabThird.classList.remove('active_btn')
-  container.innerHTML =` <p> qwerty</p>`
+  container.innerHTML =`
+  <h1 class="title title_second">
+      <img src="../../img/icons/icon_title.svg" alt="">
+      История и основная информация
+    </h1>
+    <div class="cards_center">
+      <div class="position">
+        <img class="position_img" class="middle_img" src="../../img/center_img/Group 528.png" alt="">
+      </div>
+      <div class="card_item_center">
+        <p class="data data_1">01.03.2022</p>
+        <p>В Центре проводятся занятия в 52 группах (1756 учащихся) Проводятся занятия по корейскому языку в 64 общеобразовательных школах (239 группы, 5104 учащихся)</p>
+      </div>
+      <div class="card_item_center">
+        <img src="../../img/center_img/image 21 (2).png" alt="">
+        <p>Вступление в должность 8-го директора Центра Ким Джэёнг</p>
+      </div>
+       <div class="card_item_center">
+        <p class="data data_2">01.03.2022</p>
+        <img src="../../img/center_img/image 21 (2).png" alt="">
+        <p>В Центре проводятся занятия в 50 группах (1674 учащихся) Проводятся занятия по корейскому языку в 61 общеобразовательных школах (219 группы, 5850 учащихся)</p>
+      </div>
+      <div class="card_item_center">
+        <p class="data data_3">01.03.2022</p>
+        <img src="../../img/center_img/image 21 (2).png" alt="">
+        <p>В Центре проводятся занятия в 51 группах (1698 учащихся) Проводятся занятия по корейскому языку в 64 общеобразовательных школах (239 группы, 5104 учащихся)</p>
+      </div>
+      <div class="card_item_center">
+        <p class="data data_4">01.03.2022</p>
+        <img src="../../img/center_img/image 21 (2).png" alt="">
+        <p>В Центре проводятся занятия в 51 группах (1698 учащихся) Проводятся занятия по корейскому языку в 64 общеобразовательных школах (239 группы, 5104 учащихся)</p>
+      </div>
+      <div class="card_item_center">
+        <p class="data data_5">01.03.2022</p>
+        <img src="../../img/center_img/image 21 (2).png" alt="">
+        <p>Вступление в должность 7-го директора Центра Ким Дэ Гван</p>
+      </div>
+      <div class="card_item_center">
+        <p class="data data_6">01.03.2022</p>
+        <img src="../../img/center_img/image 21 (2).png" alt="">
+        <p>В Центре проводятся занятия в 49 группах (1525 учащихся) Проводятся занятия по корейскому языку в 46 общеобразовательных школах (164 группы, 4260 учащихся)</p>
+      </div>
+      <div class="card_item_center">
+        <p class="data data_7">01.03.2022</p>
+        <img src="../../img/center_img/image 21 (2).png" alt="">
+        <p>В Центре проводятся занятия в 49 группах (1525 учащихся) Проводятся занятия по корейскому языку в 46 общеобразовательных школах (164 группы, 4260 учащихся)</p>
+      </div>
+      <div class="card_item_center">
+        <p class="data data_8">01.03.2022</p>
+        <img src="../../img/center_img/image 21 (2).png" alt="">
+        <p>В Центре проводятся занятия в 49 группах (1525 учащихся) Проводятся занятия по корейскому языку в 46 общеобразовательных школах (164 группы, 4260 учащихся)</p>
+      </div>
+      <div class="card_item_center">
+        <p class="data data_9">01.03.2022</p>
+        <p>В Центре проводятся занятия в 49 группах (1525 учащихся) Проводятся занятия по корейскому языку в 46 общеобразовательных школах (164 группы, 4260 учащихся)</p>
+      </div>
+      <div class="card_item_center">
+        <p class="data data_10">01.03.2022</p>
+        <img src="../../img/center_img/image 21 (2).png" alt="">
+        <p>Вступление в должность 6-го директора Центра Мин Дже Щик</p>
+      </div>
+      <div class="card_item_center">
+        <p class="data data_11">01.03.2022</p>
+        <img src="../../img/center_img/image 21 (2).png" alt="">
+        <p>Вступление в должность 6-го директора Центра Мин Дже Щик</p>
+      </div>
+      <div class="card_item_center">
+        <p class="data data_12">01.03.2022</p>
+        <img src="../../img/center_img/image 21 (2).png" alt="">
+        <p>Вступление в должность 6-го директора Центра Мин Дже Щик</p>
+      </div>
+      <div class="card_item_center">
+        <p class="data data_13">01.03.2022</p>
+        <img src="../../img/center_img/image 21 (2).png" alt="">
+        <p>Вступление в должность 6-го директора Центра Мин Дже Щик</p>
+      </div>
+      <div class="card_item_center">
+        <p class="data data_14">01.03.2022</p>
+        <img src="../../img/center_img/image 21 (2).png" alt="">
+        <p>Вступление в должность 6-го директора Центра Мин Дже Щик</p>
+      </div>
+      <div class="card_item_center">
+        <p class="data data_15">01.03.2022</p>
+        <img src="../../img/center_img/image 21 (2).png" alt="">
+        <p>Вступление в должность 6-го директора Центра Мин Дже Щик</p>
+      </div>
+      <div class="card_item_center">
+        <p class="data data_16">01.03.2022</p>
+        <img src="../../img/center_img/image 21 (2).png" alt="">
+        <p>Вступление в должность 6-го директора Центра Мин Дже Щик</p>
+      </div>
+      <div class="card_item_center">
+        <p class="data data_17">01.03.2022</p>
+        <img src="../../img/center_img/image 21 (2).png" alt="">
+        <p>Вступление в должность 6-го директора Центра Мин Дже Щик</p>
+      </div>
+    </div>
+
+    <!-- MOBILE -->
+    <div class="cards_center_mobile mobile_1">
+      <img class="modbile_center_img" src="../../img/center_img/Group 487.png" alt="">
+      <div class="card_item_mobile mobile_1">
+        <h1 class="data_mobile data_mobile_1">01.03.2022</h1>
+        <img class="image_mobile" src="../../img/center_img/image_mobile.png" alt="">
+        <p>Вступление в должность 8-го директора Центра Ким Джэёнг</p>
+      </div>
+      <div class="card_item_mobile mobile_2">
+        <h1 class="data_mobile data_mobile_1">01.03.2022</h1>
+        <img class="image_mobile" src="../../img/center_img/image_mobile.png" alt="">
+        <p>
+          В Центре проводятся занятия в 51 группах (1698 учащихся) Проводятся занятия по корейскому языку в 64 общеобразовательных школах (239 группы, 5104 учащихся)
+        </p>
+      </div>
+      <div class="card_item_mobile mobile_3">
+        <h1 class="data_mobile data_mobile_1">01.03.2022</h1>
+        <!-- <img class="image_mobile" src="../../img/center_img/image_mobile.png" alt=""> -->
+        <p>
+          В Центре проводятся занятия в 52 группах (1756 учащихся) Проводятся занятия по корейскому языку в 64 общеобразовательных школах (239 группы, 5104 учащихся)
+        </p>
+      </div>
+      <div class="card_item_mobile mobile_4">
+        <h1 class="data_mobile data_mobile_1">01.03.2022</h1>
+        <img class="image_mobile" src="../../img/center_img/image_mobile.png" alt="">
+        <p>
+          В Центре проводятся занятия в 52 группах (1756 учащихся) Проводятся занятия по корейскому языку в 64 общеобразовательных школах (239 группы, 5104 учащихся)
+        </p>
+      </div>
+      <div class="card_item_mobile mobile_5">
+        <h1 class="data_mobile data_mobile_1">01.03.2022</h1>
+        <img class="image_mobile" src="../../img/center_img/image_mobile.png" alt="">
+        <p>
+          В Центре проводятся занятия в 52 группах (1756 учащихся) Проводятся занятия по корейскому языку в 64 общеобразовательных школах (239 группы, 5104 учащихся)
+        </p>
+      </div>
+      <div class="card_item_mobile mobile_6">
+        <h1 class="data_mobile data_mobile_1">01.03.2022</h1>
+        <img class="image_mobile" src="../../img/center_img/image_mobile.png" alt="">
+        <p>
+          В Центре проводятся занятия в 52 группах (1756 учащихся) Проводятся занятия по корейскому языку в 64 общеобразовательных школах (239 группы, 5104 учащихся)
+        </p>
+      </div>
+    </div>
+    <img class="bg_el bg_left_2" src="../../img/bg/Ellipse 30.png" alt="">
+  <img class="bg_el bg_left_3" src="../../img/bg/ellipse_left.png" alt="">
+  <img class="bg_el bg_left_4" src="../../img/bg/Ellipse 30.png" alt="">
+  `
 }
 centerTabSecond.addEventListener('click', secondTabFunc)
 

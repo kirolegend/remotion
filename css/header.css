@@ -18,6 +18,7 @@ body{
   margin: 0;
   padding: 0;
 }
+
 a{
   text-decoration: none;
 }
@@ -100,7 +101,6 @@ nav{
   height: 50px;
 }
 
-
 .dropbtn {
   color: white;
   font-size: 16px;
@@ -144,9 +144,6 @@ nav{
   display: block;
 }
 
-/* .dropdown-content a:hover {
-  background-color: #ddd;
-} */
 
 .dropdown:hover .dropdown-content {
   display: block;
@@ -189,7 +186,7 @@ nav{
   top: 45px;
   left: 0;
 }
-.language:hover .btn_lang_kr{
+.language_mb:focus .btn_lang_kr{
   display: block;
 }
 
@@ -225,6 +222,7 @@ nav{
 
 .btns_lg_bg{
   display: flex;
+  align-items: center;
   gap: 30px;
 }
 .btn_lang_mb{
@@ -263,12 +261,13 @@ nav{
 }
 .menu__btn {
   position: absolute;
-  top: 39px;
+  /* top: 29px; */
   right: 20px;
   width: 26px;
   height: 26px;
   cursor: pointer;
   z-index: 1;
+  padding-top: 10px;
 }
 
 .menu__btn > span,
@@ -302,8 +301,7 @@ nav{
   list-style: none;
   background-color: #004098;
   box-shadow: 2px 2px 6px rgba(0, 0, 0, .4);
-  transition-duration: .25s;
-  z-index: 2;
+  border-radius: 20px 0px 0px 20px;
 }
 .d-none{
   display: none;
@@ -356,7 +354,7 @@ nav{
   align-items: center;
   height: 45px;
   gap: 12px;
-  margin-top: 8px;
+  /* margin-top: 8px; */
 }
 .contacts a{
   color: #fff;
@@ -392,6 +390,7 @@ footer{
   color: #fff;
   display: flex;
   justify-content: space-between;
+  z-index: 3;
 }
 #map{
   width: 592px;
@@ -410,6 +409,7 @@ footer{
   flex-direction: column;
   gap: 28px;
   margin-top: 20px;
+  z-index: 1;
 }
 .nav_footer{
   display: flex;
@@ -441,6 +441,7 @@ footer{
   display: flex;
   gap: 15px;
   margin-top: 30px;
+  z-index: 6;
 }
 .phones_footer a{
   color: #fff;
@@ -460,10 +461,26 @@ footer{
 @media screen and (max-width: 1250px) {
   .cont_map{
   padding-left: 30px;
+}
+.above_nav{
+  padding-left: 30px;
   padding-right: 30px;
 }
 #map{
   width: 450px;
+}
+.under_nav_container{
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.text_title{
+  padding-left: 50px;
+}
+}
+@media screen and (max-width: 1050px) {
+.above_nav{
+  padding-left: 0px;
+  padding-right: 0px;
 }
 }
 @media screen and (max-width: 950px) {
@@ -515,13 +532,20 @@ footer{
 }
 .img_foot_1{
   left: 0;
-  bottom: 0px;
+  top: -40px;
   max-width: 384px;
   width: 100%;
 }
 .img_foot_2{
   right: 0;
-  top: 0px;
+  top:0;
   max-width: 336px;
   width: 100%;
+  z-index: 1;
+}
+
+@media screen and (max-width:700px) {
+  .img_foot_2{
+    top: 200px;
+  }
 }

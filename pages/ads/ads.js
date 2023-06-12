@@ -303,7 +303,7 @@ vacation_ads.addEventListener('click', vacation)
 
 
 
-const menu =  document.getElementById('label_menu')
+const menu =  document.getElementById('menu__toggle')
 const menu_box =  document.getElementById('menu')
 
 menu.addEventListener('click', () => {

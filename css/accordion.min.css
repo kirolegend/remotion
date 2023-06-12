@@ -64,7 +64,7 @@
 .list_item{
   background-color: #004098;
   border: none;
-  padding: 10px 0px;
+  /* padding: 10px 0px; */
 }
 .list__item-title a{
   font-size: 16px;
@@ -74,11 +74,11 @@
   margin-left: 30px;
 }
 .list__item-title svg{
-  margin-top: 8px;
+  /* margin-top: 8px; */
   margin-left: 23px;
 }
 .list__item-text a{
-  padding-top: 10px;
+  /* padding-top: 10px; */
   margin-left: 15px;
   color: #fff;
   font-size: 14px;
