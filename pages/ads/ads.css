@@ -217,12 +217,10 @@
   font-size: 32px;
   font-weight: 700;
   line-height: 38px;
-  margin-top: 100px;
+  margin-top: 40px;
   width: 100%;
 }
-.under_main{
-  width: 100%;
-}
+
 h1 img{
   position: absolute;
   left: -50px;
@@ -262,20 +260,136 @@ h1 img{
   border: none;
   border-radius: 30px;
   box-shadow: 4px 10px 30px rgba(0, 0, 0, 0.06);
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 .swiper {
   width: 600px;
   height: 300px;
 }
+
+
+
+.swiper {
+  max-width: 553px;
+  width: 100%;
+  max-height: 340px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.swiper-slide img{
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
+}
+.video_swipe{
+  margin-bottom: 110px;
+  display: flex;
+  gap: 30px;
+  justify-content: space-between;
+}
+.swiper-pagination-bullet{
+  width: 10%;
+  height: 5px;
+  border-radius: 7px;
+}
+iframe{
+  border-radius: 20px;
+  max-width: 590px;
+  width: 100%;
+}
+
 @media screen and (max-width:1300px) {
   .under_main{
-    margin: 50px;
-    margin-right: 50px;
+    padding-left: 30px;
+    padding-right: 30px;
+    max-width: 1000px;
+    width: 100%;
+  }
+  .video_swipe{
+    flex-direction: column;
+  }
+  .swiper{
+    margin: 0;
   }
 }
-/* @media screen and (max-width:1300px) {
+@media screen and (max-width:1060px) {
   .under_main{
-    padding-left: 50px;
-    padding-right: 50px;
+    max-width: 700px;
+    width: 100%;
   }
-} */
+}
+@media screen and (max-width:800px) {
+  .under_main{
+    max-width: 400px;
+    width: 100%;
+  }
+  iframe{
+    height: 200px;
+  }
+  .swiper{
+    height: 250px;
+  }
+}
+@media screen and (max-width:470px) {
+  .under_main{
+    max-width: 320px;
+    width: 100%;
+    padding: 0;
+  }
+  .title img{
+    display: none;
+  }
+  #close{
+    width: 30px;
+  }
+}
+
+.carousel{
+  max-width: 1150px;
+  quotes: 100%;
+  margin: auto;
+  border-radius: 20px;
+}
+.carousel-inner img{
+  /* border-radius: 39px; */
+  object-fit: cover;
+}
+.carousel-inner{
+  border-radius: 39px;
+}
+#modal{
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  padding-top: 200px;
+  top: 0;
+  left: 0;
+  z-index: 12;
+  background-color: #00409833;
+}
+#close{
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 10;
+  cursor: pointer;
+}
+@media screen and (max-width: 1200px) {
+  #modal{
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+.el_left{
+  position: absolute;
+  top: 1100px;
+  left: 0;
+  z-index: -1;
+}
+.el_right{
+  position: absolute;
+  top: 600px;
+  right: 0;
+  z-index: -1;
+}

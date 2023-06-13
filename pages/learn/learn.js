@@ -109,30 +109,30 @@ function learnBtnSecondFunc (){
   <img src="../../img/icons/icon_title.svg" alt="">
   Объявления о наборе студентов
 </h1>
-<div class="list">
-  <div class="list_item list_bg">Номер</div>
-  <div class="list_item list_bg">Название</div>
-  <div class="list_item list_bg">Дата</div>
+<div class="list_learn">
+  <div class="list_item_learn list_bg">Номер</div>
+  <div class="list_item_learn list_bg">Название</div>
+  <div class="list_item_learn list_bg">Дата</div>
 </div>
-<div class="list">
-  <div class="list_item">1</div>
-  <div class="list_item">[Инха университет] Набор иностранных студентов на 2020 г.</div>
-  <div class="list_item">2019.11.05</div>
+<div class="list_learn">
+  <div class="list_item_learn">1</div>
+  <div class="list_item_learn">[Инха университет] Набор иностранных студентов на 2020 г.</div>
+  <div class="list_item_learn">2019.11.05</div>
 </div>
-<div class="list">
-  <div class="list_item">1</div>
-  <div class="list_item">[Инха университет] Набор иностранных студентов на 2020 г.</div>
-  <div class="list_item">2019.11.05</div>
+<div class="list_learn">
+  <div class="list_item_learn">1</div>
+  <div class="list_item_learn">[Инха университет] Набор иностранных студентов на 2020 г.</div>
+  <div class="list_item_learn">2019.11.05</div>
 </div>
-<div class="list">
-  <div class="list_item">1</div>
-  <div class="list_item">[Инха университет] Набор иностранных студентов на 2020 г.</div>
-  <div class="list_item">2019.11.05</div>
+<div class="list_learn">
+  <div class="list_item_learn">1</div>
+  <div class="list_item_learn">[Инха университет] Набор иностранных студентов на 2020 г.</div>
+  <div class="list_item_learn">2019.11.05</div>
 </div>
-<div class="list">
-  <div class="list_item">1</div>
-  <div class="list_item">[Инха университет] Набор иностранных студентов на 2020 г.</div>
-  <div class="list_item">2019.11.05</div>
+<div class="list_learn">
+  <div class="list_item_learn">1</div>
+  <div class="list_item_learn">[Инха университет] Набор иностранных студентов на 2020 г.</div>
+  <div class="list_item_learn">2019.11.05</div>
 </div>
   `
 }

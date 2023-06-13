@@ -83,35 +83,46 @@ function coursesThirdFunc(){
   courseThirdTab.classList.add('active_btn')
   container.innerHTML =`
   <h1 class="title">
-  <img src="../../img/icons/icon_title.svg" alt="">
-  Материалы для уроков 
-</h1>
-<div class="mat_container">
-  <button class="doc_btn">
-    <img src="../../img/icons/doc.svg" alt="">
-    дополнительная книга 1-2 <br> для второго уровня
-  </button>
-  <button class="doc_btn">
-    <img src="../../img/icons/doc.svg" alt="">
-    дополнительная книга 1-2 <br> для второго уровня
-  </button>
-  <button class="doc_btn">
-    <img src="../../img/icons/doc.svg" alt="">
-    дополнительная книга 1-2 <br> для второго уровня
-  </button>
-  <button class="doc_btn">
-    <img src="../../img/icons/doc.svg" alt="">
-    дополнительная книга 1-2 <br> для второго уровня
-  </button>
-  <button class="doc_btn">
-    <img src="../../img/icons/doc.svg" alt="">
-    дополнительная книга 1-2 <br> для второго уровня
-  </button>
-  <button class="doc_btn">
-    <img src="../../img/icons/doc.svg" alt="">
-    дополнительная книга 1-2 <br> для второго уровня
-  </button>
-</div>
+        <img src="../../img/icons/icon_title.svg" alt="">
+        Материалы для уроков 
+      </h1>
+      <div class="mat_container">
+        <a href="">
+          <button class="doc_btn">
+            <img src="../../img/icons/doc.svg" alt="">
+            дополнительная книга 1-2 <br> для второго уровня
+          </button>
+        </a>
+        <a href="">
+          <button class="doc_btn">
+            <img src="../../img/icons/doc.svg" alt="">
+            дополнительная книга 1-2 <br> для второго уровня
+          </button>
+        </a>
+        <a href="">
+          <button class="doc_btn">
+            <img src="../../img/icons/doc.svg" alt="">
+            дополнительная книга 1-2 <br> для второго уровня
+          </button>
+        </a>
+        <a href="">
+          <button class="doc_btn">
+            <img src="../../img/icons/doc.svg" alt="">
+            дополнительная книга 1-2 <br> для второго уровня
+          </button>
+        </a>
+        <a href="">
+          <button class="doc_btn">
+            <img src="../../img/icons/doc.svg" alt="">
+            дополнительная книга 1-2 <br> для второго уровня
+          </button>
+        </a>
+        <a href="">
+          <button class="doc_btn">
+            <img src="../../img/icons/doc.svg" alt="">
+            дополнительная книга 1-2 <br> для второго уровня
+          </button>
+        </a>
   `
 }
 courseThirdTab.addEventListener('click', coursesThirdFunc)

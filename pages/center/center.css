@@ -1,17 +1,17 @@
 @font-face {
   font-weight: 700;
   font-family: Helvetica;
-  src: url("../fonts/HelveticaBold.ttf");;
+  src: url("../../fonts/HelveticaBold.ttf");;
 }
 @font-face {
   font-weight: 400;
   font-family: Helvetica;
-  src: url("../fonts/HelveticaRegular.ttf");;
+  src: url("../../fonts/HelveticaRegular.ttf");;
 }
 @font-face {
   font-weight: 300;
   font-family: Helvetica;
-  src: url("../fonts/Helvetica-Light.ttf");;
+  src: url("../../fonts/Helvetica-Light.ttf");;
 }
 body{
   font-family: Helvetica;
@@ -283,6 +283,46 @@ main{
 iframe{
   border-radius: 20px;
 }
+
+ /* MODAL */
+ #modal{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  gap: 100vh;
+  background-color: #00409833;
+  padding-top: 200px;
+  z-index: 10;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+#close{
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 11;
+  cursor: pointer;
+}
+@media screen and (max-width: 600px) {
+  #close{
+    width: 40px;
+    top: 10px;
+    right: 10px;
+  }
+}
+#carouselExampleIndicators_modal{
+  max-width: 1100px !important;
+  width: 100%;
+  margin: auto;
+}
+.my-carousel{
+  border-radius: 40px;
+}
+
+/* modal end */
 
 @media screen and (max-width: 1300px) {
   .img_and_text, .video_and_text{

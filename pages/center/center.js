@@ -1,16 +1,24 @@
 new Accordion('.accordion-container');
 
-var map;
+// var map;
 
-DG.then(function () {
-  map = DG.map('map', {
-    center: [42.85724, 74.604053],
-    zoom: 13
-  });
-  DG.marker([42.85724, 74.604053]).addTo(map);
-});
+// DG.then(function () {
+//   map = DG.map('map', {
+//     center: [42.85724, 74.604053],
+//     zoom: 13
+//   });
+//   DG.marker([42.85724, 74.604053]).addTo(map);
+// });
 
-
+let open = document.getElementById('open')
+let modal = document.getElementById('modal')
+let close = document.getElementById('close')
+function openModal(){
+  modal.classList.remove('d-none')
+  close.addEventListener('click', ()=>{
+    modal.classList.add('d-none')
+  })
+}
 
 
 
@@ -249,7 +257,7 @@ function thirdTab(){
           <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
           <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
         </div>
-        <div class="carousel-inner">
+        <div id="open" onclick="openModal()" class="carousel-inner">
           <div class="carousel-item modal-carousel active">
             <img src="https://images.unsplash.com/photo-1682686580024-580519d4b2d2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1286&q=80" class="d-block w-100" alt="...">
           </div>
@@ -274,7 +282,9 @@ function thirdTab(){
 </div>
   </div>   
 </div>
+
   `
+
 
   const thirdTab_first = document.getElementById('center_tab_thirdTab_first')
 
@@ -282,6 +292,9 @@ function thirdTab(){
     const containerThirdTab = document.getElementById('container_thirdTab')
     thirdTab_first.classList.toggle('active_btn')
     thirdTab_second.classList.toggle('active_btn')
+
+
+
     containerThirdTab.innerHTML =`
  <div class="center_flex">
       <div class="text_r">
@@ -312,7 +325,7 @@ function thirdTab(){
           <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
           <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
         </div>
-        <div class="carousel-inner">
+        <div  id="open" onclick="openModal()" class="carousel-inner">
           <div class="carousel-item modal-carousel active">
             <img src="https://images.unsplash.com/photo-1682686580024-580519d4b2d2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1286&q=80" class="d-block w-100" alt="...">
           </div>
@@ -337,6 +350,14 @@ function thirdTab(){
     </div>
     </div>
     `
+    open.addEventListener('click', ()=>{
+      modal.classList.remove('d-none')
+      close.addEventListener('click', ()=>{
+        modal.classList.add('d-none')
+      })
+    })
+
+
   })
   const thirdTab_second = document.getElementById('center_tab_thirdTab_second');
   thirdTab_second.onclick = () => {
@@ -373,7 +394,7 @@ function thirdTab(){
         <button type="button" data-bs-target="#carouselExampleIndicators_2" data-bs-slide-to="1" aria-label="Slide 2"></button>
         <button type="button" data-bs-target="#carouselExampleIndicators_2" data-bs-slide-to="2" aria-label="Slide 3"></button>
       </div>
-      <div class="carousel-inner">
+      <div  id="open" onclick="openModal()" class="carousel-inner">
         <div class="carousel-item modal-carousel active">
           <img src="https://images.unsplash.com/photo-1682686580024-580519d4b2d2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1286&q=80" class="d-block w-100" alt="...">
         </div>
@@ -397,14 +418,26 @@ function thirdTab(){
     </div>
   </div>
   </div>
-    `;
+
+    `
+    open.addEventListener('click', ()=>{
+      modal.classList.remove('d-none')
+      close.addEventListener('click', ()=>{
+        modal.classList.add('d-none')
+      })
+    })
   }
 }
 centerTabThird.addEventListener('click', thirdTab)
 
 
 
-
+open.addEventListener('click', ()=>{
+  modal.classList.remove('d-none')
+  close.addEventListener('click', ()=>{
+    modal.classList.add('d-none')
+  })
+})
 
 
 
@@ -432,22 +465,3 @@ if (paramValue == 3){
 }
 
 
-// const swiperF = new Swiper('#swiper_1', {
-//   pagination: {
-//     el: '.swiper-pagination',
-//   },
-//   navigation: {
-//     nextEl: '.swiper-button-next',
-//     prevEl: '.swiper-button-prev',
-//   },
-// });
-
-// const swiperS = new Swiper('#swiper_2', {
-//   pagination: {
-//     el: '.swiper-pagination',
-//   },
-//   navigation: {
-//     nextEl: '.swiper-button-next',
-//     prevEl: '.swiper-button-prev',
-//   },
-// });

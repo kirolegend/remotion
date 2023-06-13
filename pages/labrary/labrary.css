@@ -299,12 +299,8 @@ main{
   cursor: pointer;
 }
 .none_modal{
-  /* display: none; */
-  visibility: hidden;
-  opacity: 0;
-  transition:  opacity 0.8s;
+  display: none;
 }
 .open{
-  visibility: visible;
-  opacity: 1;
+  display: block;
 }

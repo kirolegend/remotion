@@ -10,28 +10,37 @@ DG.then(function () {
   DG.marker([42.85724, 74.604053]).addTo(map);
 });
 
-// const swiper2 = new Swiper('.swiper', {
-//   // Optional parameters
-//   direction: 'horizontal',
-//   loop: true,
+const swiper = new Swiper('.swiper', {
+  // Optional parameters
+  // direction: 'horizontal',
+  // loop: true,
 
-//   // If we need pagination
-//   pagination: {
-//     el: '.swiper-pagination',
-//   },
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+  },
 
-//   // Navigation arrows
-//   navigation: {
-//     nextEl: '.swiper-button-next',
-//     prevEl: '.swiper-button-prev',
-//   },
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
 
-//   // And if we need scrollbar
-//   // scrollbar: {
-//   //   el: '.swiper-scrollbar',
-//   // },
-// });
+  // scrollbar: {
+  //   el: '.swiper-scrollbar',
+  // },
+});
 
+// MODAL
+const open = document.getElementById('open')
+const modal =document.getElementById('modal')
+const close = document.getElementById('close')
+open.addEventListener('click', ()=>{
+  modal.classList.remove('d-none')
+    close.addEventListener('click', ()=>{
+      modal.classList.add('d-none')
+    })
+})
 
 
 const general_ads = document.getElementById('general_ads')
