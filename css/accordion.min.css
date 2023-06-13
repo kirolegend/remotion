@@ -67,7 +67,7 @@
   /* padding: 10px 0px; */
 }
 .list__item-title a{
-  font-size: 16px;
+  font-size: 18px;
   color: #fff;
   text-decoration: none;
   font-weight: 400;
@@ -78,9 +78,9 @@
   margin-left: 23px;
 }
 .list__item-text a{
-  /* padding-top: 10px; */
-  margin-left: 15px;
+  padding-top: 10px;
+  margin-left: 40px;
   color: #fff;
-  font-size: 14px;
+  font-size: 16px;
   display: block;
 }

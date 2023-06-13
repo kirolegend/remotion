@@ -11,6 +11,22 @@ DG.then(function () {
 });
 
 
+const swiper = new Swiper('.swiper', {
+
+
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+});
+
 
 // CENTER TABS
 let centerTabFirst = document.getElementById('center_tab_f')
@@ -217,7 +233,8 @@ function thirdTab(){
         Деятельность по поддержке иностранных студентов
       </button>
     </div>
-    <div id="container_thirdTab">
+    <div class="center_flex">
+    <div class="text_r">
       <div class="img_and_text">
         <div class="text_lang">
           <span class="korean_lang_text">
@@ -228,19 +245,42 @@ function thirdTab(){
             <h1>Содействие в развитии корейского языка в учебных заведениях и поддержка</h1>
             <p>Оказываем содействие в внедрении корейского языка в Казахстанских школах как обязательный предмет либо как предмет факультативного курса.Также, оказываем поддержку школам которые изучают корейский язык. Обеспечиваем учебниками, и направляем преподавателей носителей языка из Республики Корея.</p>
           </span>
-        </div>
-        <div class="image">
-          <img src="../../img/just_img/lang_img.png" alt="">
+          <span class="korean_lang_text">
+            <h1>Курсы корейского языка</h1>
+            <p>Одной из основных деятельностей центра является курсы корейского языка, всего 8 уровней,начиная с начального заканчивая продвинутым уровнем. Количество студентов, изучающих корейский язык в центре, превышает 3000 человек в год.</p>
+          </span>
+      </div>
+    </div>
+    <div class="yt_and_img">
+      <div class="yt">
+        <iframe width="580" height="340" src="https://www.youtube.com/embed/Nzr4e7N2Jgo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </div>
+      <div class="swiper_img">
+        <div class="swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <img src="https://images.unsplash.com/photo-1669223206469-0e74c34c275d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzfHx8ZW58MHx8fHx8&auto=format&fit=crop&w=500&q=60" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="https://images.unsplash.com/photo-1669223206469-0e74c34c275d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzfHx8ZW58MHx8fHx8&auto=format&fit=crop&w=500&q=60" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="https://images.unsplash.com/photo-1669223206469-0e74c34c275d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzfHx8ZW58MHx8fHx8&auto=format&fit=crop&w=500&q=60" alt="">
+            </div>
+          </div>
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
+        
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
         </div>
       </div>
-      <div class="video_and_text">
-        <iframe width="580" height="330" src="https://www.youtube.com/embed/Nzr4e7N2Jgo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-        <span class="korean_lang_text">
-          <h1>Курсы корейского языка</h1>
-          <p>Одной из основных деятельностей центра является курсы корейского языка, всего 8 уровней,начиная с начального заканчивая продвинутым уровнем. Количество студентов, изучающих корейский язык в центре, превышает 3000 человек в год.</p>
-        </span>
-      </div>
-    </div>    
+    </div>
+  </div>
+  </div>   
   `
 
   const thirdTab_first = document.getElementById('center_tab_thirdTab_first')
@@ -250,7 +290,9 @@ function thirdTab(){
     thirdTab_first.classList.toggle('active_btn')
     thirdTab_second.classList.toggle('active_btn')
     containerThirdTab.innerHTML =`
-    <div class="img_and_text">
+ <div class="center_flex">
+      <div class="text_r">
+        <div class="img_and_text">
           <div class="text_lang">
             <span class="korean_lang_text">
               <h1>Курсы корейского языка</h1>
@@ -260,18 +302,42 @@ function thirdTab(){
               <h1>Содействие в развитии корейского языка в учебных заведениях и поддержка</h1>
               <p>Оказываем содействие в внедрении корейского языка в Казахстанских школах как обязательный предмет либо как предмет факультативного курса.Также, оказываем поддержку школам которые изучают корейский язык. Обеспечиваем учебниками, и направляем преподавателей носителей языка из Республики Корея.</p>
             </span>
-          </div>
-          <div class="image">
-            <img src="../../img/just_img/lang_img.png" alt="">
+            <span class="korean_lang_text">
+              <h1>Курсы корейского языка</h1>
+              <p>Одной из основных деятельностей центра является курсы корейского языка, всего 8 уровней,начиная с начального заканчивая продвинутым уровнем. Количество студентов, изучающих корейский язык в центре, превышает 3000 человек в год.</p>
+            </span>
+        </div>
+      </div>
+      <div class="yt_and_img">
+        <div class="yt">
+          <iframe width="580" height="340" src="https://www.youtube.com/embed/Nzr4e7N2Jgo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        <div class="swiper_img">
+          <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <img src="https://images.unsplash.com/photo-1669223206469-0e74c34c275d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzfHx8ZW58MHx8fHx8&auto=format&fit=crop&w=500&q=60" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="https://images.unsplash.com/photo-1669223206469-0e74c34c275d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzfHx8ZW58MHx8fHx8&auto=format&fit=crop&w=500&q=60" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="https://images.unsplash.com/photo-1669223206469-0e74c34c275d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzfHx8ZW58MHx8fHx8&auto=format&fit=crop&w=500&q=60" alt="">
+              </div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+          
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
           </div>
         </div>
-        <div class="video_and_text">
-          <iframe width="580" height="330" src="https://www.youtube.com/embed/Nzr4e7N2Jgo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-          <span class="korean_lang_text">
-            <h1>Курсы корейского языка</h1>
-            <p>Одной из основных деятельностей центра является курсы корейского языка, всего 8 уровней,начиная с начального заканчивая продвинутым уровнем. Количество студентов, изучающих корейский язык в центре, превышает 3000 человек в год.</p>
-          </span>
-        </div>
+      </div>
+    </div>
+    </div>
     `
   })
   const thirdTab_second = document.getElementById('center_tab_thirdTab_second');
@@ -292,28 +358,41 @@ function thirdTab(){
             <h1>Содействие в развитии корейского языка в учебных заведениях и поддержка</h1>
             <p>Оказываем содействие в внедрении корейского языка в Казахстанских школах как обязательный предмет либо как предмет факультативного курса.Также, оказываем поддержку школам которые изучают корейский язык. Обеспечиваем учебниками, и направляем преподавателей носителей языка из Республики Корея.</p>
           </span>
+          <span class="korean_lang_text">
+            <h1>Курсы корейского языка</h1>
+            <p>Одной из основных деятельностей центра является курсы корейского языка, всего 8 уровней,начиная с начального заканчивая продвинутым уровнем. Количество студентов, изучающих корейский язык в центре, превышает 3000 человек в год.</p>
+          </span>
+      </div>
+    </div>
+    <div class="yt_and_img">
+      <div class="yt">
+        <iframe width="580" height="340" src="https://www.youtube.com/embed/Nzr4e7N2Jgo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </div>
+      <div class="swiper_img">
+        <div class="swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <img src="https://images.unsplash.com/photo-1669223206469-0e74c34c275d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzfHx8ZW58MHx8fHx8&auto=format&fit=crop&w=500&q=60" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="https://images.unsplash.com/photo-1669223206469-0e74c34c275d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzfHx8ZW58MHx8fHx8&auto=format&fit=crop&w=500&q=60" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="https://images.unsplash.com/photo-1669223206469-0e74c34c275d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzfHx8ZW58MHx8fHx8&auto=format&fit=crop&w=500&q=60" alt="">
+            </div>
+          </div>
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
+        
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
         </div>
-        <!-- <div class="image">
-          <img src="../../img/just_img/lang_img.png" alt="">
-        </div> -->
-      </div>
-      <div class="video_and_text">
-        <!-- <iframe width="580" height="330" src="https://www.youtube.com/embed/Nzr4e7N2Jgo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
-        <span class="korean_lang_text">
-          <h1>Курсы корейского языка</h1>
-          <p>Одной из основных деятельностей центра является курсы корейского языка, всего 8 уровней,начиная с начального заканчивая продвинутым уровнем. Количество студентов, изучающих корейский язык в центре, превышает 3000 человек в год.</p>
-        </span>
       </div>
     </div>
-    <div class="img_l">
-      <span>
-        <img class="img_f" src="../../img/just_img/center_f_img.png" alt="">
-      </span>
-      <span class="img_s_t">
-        <img src="../../img/just_img/center_s_img.png" alt="">
-        <img src="../../img/just_img/center_t_img.png" alt="">
-      </span>
-    </div>
+  </div>
   </div>
     `;
   }

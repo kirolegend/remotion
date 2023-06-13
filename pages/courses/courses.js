@@ -10,6 +10,12 @@ DG.then(function () {
   DG.marker([42.85724, 74.604053]).addTo(map);
 });
 
+const menu =  document.getElementById('label_menu')
+const menu_box =  document.getElementById('menu')
+
+menu.addEventListener('click', () => {
+  menu_box.classList.toggle('d-none')
+})
 
 
 
