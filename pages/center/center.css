@@ -1,3 +1,25 @@
+@font-face {
+  font-weight: 700;
+  font-family: Helvetica;
+  src: url("../fonts/HelveticaBold.ttf");;
+}
+@font-face {
+  font-weight: 400;
+  font-family: Helvetica;
+  src: url("../fonts/HelveticaRegular.ttf");;
+}
+@font-face {
+  font-weight: 300;
+  font-family: Helvetica;
+  src: url("../fonts/Helvetica-Light.ttf");;
+}
+body{
+  font-family: Helvetica;
+  margin: 0;
+  padding: 0;
+}
+
+
 *{
   padding: 0;
   margin: 0;
@@ -29,28 +51,44 @@ main{
     background: url("../../img/bg/center_bg.png") no-repeat center;
   }
 }
-.swiper {
+#carouselExampleIndicators, #carouselExampleIndicators_2{
   max-width: 590px;
   width: 100%;
-  height: 340px;
   border-radius: 20px;
+  margin: 0;
 }
-.swiper-slide img{
+
+.carousel-indicators button{
+  background-color:#004098 !important;
+}
+
+
+/* .swiper-slide img{
   border-radius: 20px;
   max-width: 590px;
   width: 100%;
   height: 340px;
+  object-fit: cover;
 }
 .swiper-pagination span{
   width: 10%;
   height: 5px;
   border-radius: 7px;
-}
+} */
+
+.modal-carousel img{
+  border-radius: 20px;
+} 
+
 
 .yt_and_img{
   display: flex;
   justify-content: space-between;
+  gap: 40px;
 }
+/* iframe{
+  width: 100%;
+} */
 
 .bg_el{
   position: absolute;
@@ -61,6 +99,10 @@ main{
 .bg_left_1{
   top: 400px;
   left: 0;
+}
+.direct{
+  top: 900px;
+  right: 0;
 }
 .bg_left_2{
   top: 1000px;
@@ -89,7 +131,7 @@ main{
 }
 .tabs button{
   border: none;
-  padding: 15px 30px;
+  padding: 11px 30px;
   border-radius: 30px;
   font-weight: 400;
   font-size: 16px;
@@ -115,6 +157,8 @@ main{
   top: 0px;
 }
 .title{
+  font-weight: 700 !important;
+  font-size: 32px !important;
   position: relative;
   max-width: 581px;
 }
@@ -128,7 +172,6 @@ main{
   max-width: 1218px;
   margin: auto;
   margin-bottom: 106px;
-
 }
 .post_container{
   display: flex;
@@ -136,13 +179,19 @@ main{
 }
 .tab_container p{
   max-width: 702px;
-  font-size: 14px;
-  font-weight: 400;
+  font-size: 14px !important;
+  font-weight: 400 !important;
   color: #4D5257;
   line-height: 21px;
   margin-top: 20px;
   margin-bottom: 10px;
 }
+/* #third_first_tab{
+  display: none;
+} */
+/* #third_second_tab{
+  display: none;
+} */
 
 @media screen and (max-width: 1200px) {
   .main_bg h1{
@@ -154,6 +203,17 @@ main{
   }
   .director img{
     padding-left: 30px;
+  }
+  #container{
+  padding-left: 50px;
+  padding-right: 50px;
+  }
+  .yt_and_img{
+    flex-direction: column;
+    justify-content: center;
+  }
+  .swiper{
+    margin-left: 0 !important;
   }
 }
 @media screen and (max-width: 960px) {
@@ -186,6 +246,9 @@ main{
   .post_container{
     padding-left: 20px;
     padding-right:20px;
+  }
+  #container{
+    padding: 0;
   }
 }
 
@@ -555,7 +618,7 @@ iframe{
 .modbile_center_img{
   position: relative;
   top: 50px;
-  left: 0;
+  left: -60px;
 }
 .card_item_mobile{
   max-width: 300px;

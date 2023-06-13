@@ -11,21 +11,7 @@ DG.then(function () {
 });
 
 
-const swiper = new Swiper('.swiper', {
 
-
-  // If we need pagination
-  pagination: {
-    el: '.swiper-pagination',
-  },
-
-  // Navigation arrows
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-
-});
 
 
 // CENTER TABS
@@ -220,67 +206,74 @@ function thirdTab(){
   centerTabThird.classList.add('active_btn')
   container.innerHTML =`
   <div class="second_container">
-      <h1 class="title">
-        <img src="../../img/icons/icon_title.svg" alt="">
-        Деятельность центра
-      </h1>
-    </div>
-    <div class="tabs tabs_second">
-      <button class="active_btn" id="center_tab_thirdTab_first">
-        Распространение кор.языка
-      </button>
-      <button id="center_tab_thirdTab_second">
-        Деятельность по поддержке иностранных студентов
-      </button>
-    </div>
-    <div class="center_flex">
-    <div class="text_r">
-      <div class="img_and_text">
-        <div class="text_lang">
-          <span class="korean_lang_text">
-            <h1>Курсы корейского языка</h1>
-            <p>Одной из основных деятельностей центра является курсы корейского языка, всего 8 уровней,начиная с начального заканчивая продвинутым уровнем. Количество студентов, изучающих корейский язык в центре, превышает 3000 человек в год.</p>
-          </span>
-          <span class="korean_lang_text ">
-            <h1>Содействие в развитии корейского языка в учебных заведениях и поддержка</h1>
-            <p>Оказываем содействие в внедрении корейского языка в Казахстанских школах как обязательный предмет либо как предмет факультативного курса.Также, оказываем поддержку школам которые изучают корейский язык. Обеспечиваем учебниками, и направляем преподавателей носителей языка из Республики Корея.</p>
-          </span>
-          <span class="korean_lang_text">
-            <h1>Курсы корейского языка</h1>
-            <p>Одной из основных деятельностей центра является курсы корейского языка, всего 8 уровней,начиная с начального заканчивая продвинутым уровнем. Количество студентов, изучающих корейский язык в центре, превышает 3000 человек в год.</p>
-          </span>
+  <h1 class="title">
+    <img src="../../img/icons/icon_title.svg" alt="">
+    Деятельность центра
+  </h1>
+</div>
+<div class="tabs tabs_second">
+  <button class="active_btn" id="center_tab_thirdTab_first">
+    Распространение кор.языка
+  </button>
+  <button id="center_tab_thirdTab_second">
+    Деятельность по поддержке иностранных студентов
+  </button>
+</div>
+<div id="container_thirdTab">
+  <div class="center_flex">
+  <div class="text_r">
+    <div class="img_and_text">
+      <div class="text_lang">
+        <span class="korean_lang_text">
+          <h1>Курсы корейского языка</h1>
+          <p>Одной из основных деятельностей центра является курсы корейского языка, всего 8 уровней,начиная с начального заканчивая продвинутым уровнем. Количество студентов, изучающих корейский язык в центре, превышает 3000 человек в год.</p>
+        </span>
+        <span class="korean_lang_text ">
+          <h1>Содействие в развитии корейского языка в учебных заведениях и поддержка</h1>
+          <p>Оказываем содействие в внедрении корейского языка в Казахстанских школах как обязательный предмет либо как предмет факультативного курса.Также, оказываем поддержку школам которые изучают корейский язык. Обеспечиваем учебниками, и направляем преподавателей носителей языка из Республики Корея.</p>
+        </span>
+        <span class="korean_lang_text">
+          <h1>Курсы корейского языка</h1>
+          <p>Одной из основных деятельностей центра является курсы корейского языка, всего 8 уровней,начиная с начального заканчивая продвинутым уровнем. Количество студентов, изучающих корейский язык в центре, превышает 3000 человек в год.</p>
+        </span>
       </div>
     </div>
-    <div class="yt_and_img">
-      <div class="yt">
-        <iframe width="580" height="340" src="https://www.youtube.com/embed/Nzr4e7N2Jgo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-      </div>
-      <div class="swiper_img">
-        <div class="swiper">
-          <!-- Additional required wrapper -->
-          <div class="swiper-wrapper">
-            <!-- Slides -->
-            <div class="swiper-slide">
-              <img src="https://images.unsplash.com/photo-1669223206469-0e74c34c275d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzfHx8ZW58MHx8fHx8&auto=format&fit=crop&w=500&q=60" alt="">
-            </div>
-            <div class="swiper-slide">
-              <img src="https://images.unsplash.com/photo-1669223206469-0e74c34c275d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzfHx8ZW58MHx8fHx8&auto=format&fit=crop&w=500&q=60" alt="">
-            </div>
-            <div class="swiper-slide">
-              <img src="https://images.unsplash.com/photo-1669223206469-0e74c34c275d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzfHx8ZW58MHx8fHx8&auto=format&fit=crop&w=500&q=60" alt="">
-            </div>
-          </div>
-          <!-- If we need pagination -->
-          <div class="swiper-pagination"></div>
-        
-          <!-- If we need navigation buttons -->
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-button-next"></div>
+  <div class="yt_and_img">
+    <div class="yt">
+      <iframe width="580" height="340" src="https://www.youtube.com/embed/Nzr4e7N2Jgo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+    <div class="swiper_img">
+      <div id="carouselExampleIndicators" class="carousel slide container ">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
         </div>
+        <div class="carousel-inner">
+          <div class="carousel-item modal-carousel active">
+            <img src="https://images.unsplash.com/photo-1682686580024-580519d4b2d2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1286&q=80" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item modal-carousel">
+            <img src="https://images.unsplash.com/photo-1682686580024-580519d4b2d2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1286&q=80" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item modal-carousel">
+            <img src="https://images.unsplash.com/photo-1682686580024-580519d4b2d2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1286&q=80" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
       </div>
     </div>
   </div>
+</div>
   </div>   
+</div>
   `
 
   const thirdTab_first = document.getElementById('center_tab_thirdTab_first')
@@ -313,27 +306,32 @@ function thirdTab(){
           <iframe width="580" height="340" src="https://www.youtube.com/embed/Nzr4e7N2Jgo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </div>
         <div class="swiper_img">
-          <div class="swiper">
-            <!-- Additional required wrapper -->
-            <div class="swiper-wrapper">
-              <!-- Slides -->
-              <div class="swiper-slide">
-                <img src="https://images.unsplash.com/photo-1669223206469-0e74c34c275d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzfHx8ZW58MHx8fHx8&auto=format&fit=crop&w=500&q=60" alt="">
-              </div>
-              <div class="swiper-slide">
-                <img src="https://images.unsplash.com/photo-1669223206469-0e74c34c275d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzfHx8ZW58MHx8fHx8&auto=format&fit=crop&w=500&q=60" alt="">
-              </div>
-              <div class="swiper-slide">
-                <img src="https://images.unsplash.com/photo-1669223206469-0e74c34c275d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzfHx8ZW58MHx8fHx8&auto=format&fit=crop&w=500&q=60" alt="">
-              </div>
-            </div>
-            <!-- If we need pagination -->
-            <div class="swiper-pagination"></div>
-          
-            <!-- If we need navigation buttons -->
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
+        <div id="carouselExampleIndicators" class="carousel slide container ">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item modal-carousel active">
+            <img src="https://images.unsplash.com/photo-1682686580024-580519d4b2d2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1286&q=80" class="d-block w-100" alt="...">
           </div>
+          <div class="carousel-item modal-carousel">
+            <img src="https://images.unsplash.com/photo-1682686580024-580519d4b2d2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1286&q=80" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item modal-carousel">
+            <img src="https://images.unsplash.com/photo-1682686580024-580519d4b2d2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1286&q=80" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
         </div>
       </div>
     </div>
@@ -369,27 +367,32 @@ function thirdTab(){
         <iframe width="580" height="340" src="https://www.youtube.com/embed/Nzr4e7N2Jgo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
       </div>
       <div class="swiper_img">
-        <div class="swiper">
-          <!-- Additional required wrapper -->
-          <div class="swiper-wrapper">
-            <!-- Slides -->
-            <div class="swiper-slide">
-              <img src="https://images.unsplash.com/photo-1669223206469-0e74c34c275d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzfHx8ZW58MHx8fHx8&auto=format&fit=crop&w=500&q=60" alt="">
-            </div>
-            <div class="swiper-slide">
-              <img src="https://images.unsplash.com/photo-1669223206469-0e74c34c275d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzfHx8ZW58MHx8fHx8&auto=format&fit=crop&w=500&q=60" alt="">
-            </div>
-            <div class="swiper-slide">
-              <img src="https://images.unsplash.com/photo-1669223206469-0e74c34c275d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzfHx8ZW58MHx8fHx8&auto=format&fit=crop&w=500&q=60" alt="">
-            </div>
-          </div>
-          <!-- If we need pagination -->
-          <div class="swiper-pagination"></div>
-        
-          <!-- If we need navigation buttons -->
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-button-next"></div>
+      <div id="carouselExampleIndicators_2" class="carousel slide container ">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators_2" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators_2" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators_2" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item modal-carousel active">
+          <img src="https://images.unsplash.com/photo-1682686580024-580519d4b2d2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1286&q=80" class="d-block w-100" alt="...">
         </div>
+        <div class="carousel-item modal-carousel">
+          <img src="https://images.unsplash.com/photo-1682686580024-580519d4b2d2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1286&q=80" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item modal-carousel">
+          <img src="https://images.unsplash.com/photo-1682686580024-580519d4b2d2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1286&q=80" class="d-block w-100" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators_2" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators_2" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
       </div>
     </div>
   </div>
@@ -427,3 +430,24 @@ if (paramValue == 2){
 if (paramValue == 3){
   thirdTab()
 }
+
+
+// const swiperF = new Swiper('#swiper_1', {
+//   pagination: {
+//     el: '.swiper-pagination',
+//   },
+//   navigation: {
+//     nextEl: '.swiper-button-next',
+//     prevEl: '.swiper-button-prev',
+//   },
+// });
+
+// const swiperS = new Swiper('#swiper_2', {
+//   pagination: {
+//     el: '.swiper-pagination',
+//   },
+//   navigation: {
+//     nextEl: '.swiper-button-next',
+//     prevEl: '.swiper-button-prev',
+//   },
+// });

@@ -20,7 +20,8 @@ body{
 }
 
 a{
-  text-decoration: none;
+  text-decoration: none !important;
+  outline: none !important;
 }
 nav{
   max-width: 1218px;
@@ -468,6 +469,7 @@ footer{
 @media screen and (max-width: 1250px) {
   .cont_map{
   padding-left: 30px;
+  padding-right: 30px;
 }
 .above_nav{
   padding-left: 30px;
