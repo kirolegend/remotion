@@ -1,5 +1,13 @@
 new Accordion('.accordion-container');
 
+const menu =  document.getElementById('menu__toggle')
+const menu_box =  document.getElementById('menu')
+
+menu.addEventListener('click', () => {
+  menu_box.classList.toggle('d-none')
+})
+
+
 var map;
 
 DG.then(function () {
@@ -10,37 +18,10 @@ DG.then(function () {
   DG.marker([42.85724, 74.604053]).addTo(map);
 });
 
-const swiper = new Swiper('.swiper', {
-  // Optional parameters
-  // direction: 'horizontal',
-  // loop: true,
 
-  // If we need pagination
-  pagination: {
-    el: '.swiper-pagination',
-  },
-
-  // Navigation arrows
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-
-  // scrollbar: {
-  //   el: '.swiper-scrollbar',
-  // },
-});
 
 // MODAL
-const open = document.getElementById('open')
-const modal =document.getElementById('modal')
-const close = document.getElementById('close')
-open.addEventListener('click', ()=>{
-  modal.classList.remove('d-none')
-    close.addEventListener('click', ()=>{
-      modal.classList.add('d-none')
-    })
-})
+
 
 
 const general_ads = document.getElementById('general_ads')
@@ -312,12 +293,8 @@ vacation_ads.addEventListener('click', vacation)
 
 
 
-const menu =  document.getElementById('menu__toggle')
-const menu_box =  document.getElementById('menu')
 
-menu.addEventListener('click', () => {
-  menu_box.classList.toggle('d-none')
-})
+
 
 
 

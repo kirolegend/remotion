@@ -1,4 +1,12 @@
+
 new Accordion('.accordion-container');
+
+const menu =  document.getElementById('label_menu')
+const menu_box =  document.getElementById('menu')
+
+menu.addEventListener('click', () => {
+  menu_box.classList.toggle('d-none')
+})
 
 var map;
 
@@ -11,12 +19,7 @@ DG.then(function () {
 });
 
 const container = document.getElementById('container')
-const menu =  document.getElementById('label_menu')
-const menu_box =  document.getElementById('menu')
 
-menu.addEventListener('click', () => {
-  menu_box.classList.toggle('d-none')
-})
 
 const learnBtnF = document.getElementById('learn_btn_f')
 const learnBtnS = document.getElementById('learn_btn_s')

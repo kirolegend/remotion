@@ -158,6 +158,11 @@ main{
     max-width: 500px;
     width: 100%;
   }
+  .mat_container{
+    padding-left: 30px;
+    padding-right: 30px;
+    justify-content: center;
+  }
 }
 @media screen and (max-width: 560px){
   .main_bg h1{

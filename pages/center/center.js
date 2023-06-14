@@ -1,18 +1,25 @@
 new Accordion('.accordion-container');
 
-// var map;
+const menu =  document.getElementById('label_menu')
+const menu_box =  document.getElementById('menu')
 
-// DG.then(function () {
-//   map = DG.map('map', {
-//     center: [42.85724, 74.604053],
-//     zoom: 13
-//   });
-//   DG.marker([42.85724, 74.604053]).addTo(map);
-// });
+menu.addEventListener('click', () => {
+  menu_box.classList.toggle('d-none')
+})
 
-let open = document.getElementById('open')
-let modal = document.getElementById('modal')
-let close = document.getElementById('close')
+var map;
+
+DG.then(function () {
+  map = DG.map('map', {
+    center: [42.85724, 74.604053],
+    zoom: 13
+  });
+  DG.marker([42.85724, 74.604053]).addTo(map);
+});
+
+var open = document.getElementById('open')
+var modal = document.getElementById('modal')
+var close = document.getElementById('close')
 function openModal(){
   modal.classList.remove('d-none')
   close.addEventListener('click', ()=>{
@@ -432,21 +439,10 @@ centerTabThird.addEventListener('click', thirdTab)
 
 
 
-open.addEventListener('click', ()=>{
-  modal.classList.remove('d-none')
-  close.addEventListener('click', ()=>{
-    modal.classList.add('d-none')
-  })
-})
 
 
 
-const menu =  document.getElementById('label_menu')
-const menu_box =  document.getElementById('menu')
 
-menu.addEventListener('click', () => {
-  menu_box.classList.toggle('d-none')
-})
 
 
 

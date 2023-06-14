@@ -383,6 +383,8 @@ iframe{
 }
 .el_left{
   position: absolute;
+  max-width: 650px;
+  width: 100%;
   top: 1100px;
   left: 0;
   z-index: -1;
@@ -391,5 +393,7 @@ iframe{
   position: absolute;
   top: 600px;
   right: 0;
+  max-width: 650px;
+  width: 100%;
   z-index: -1;
 }

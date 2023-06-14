@@ -1,5 +1,12 @@
 new Accordion('.accordion-container');
 
+const menu =  document.getElementById('menu__toggle')
+const menu_box =  document.getElementById('menu')
+
+menu.addEventListener('click', () => {
+  menu_box.classList.toggle('d-none')
+})
+
 var map;
 
 DG.then(function () {
@@ -9,6 +16,9 @@ DG.then(function () {
   });
   DG.marker([42.85724, 74.604053]).addTo(map);
 });
+
+
+
 
 
 const container = document.getElementById('container')
