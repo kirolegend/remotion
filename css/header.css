@@ -153,9 +153,7 @@ nav{
   margin-top: 13px;
 }
 
-.language{
-  position: relative;
-}
+
 .btn_lang{
   border: 1px solid #fff;
   border-radius: 20px;
@@ -179,16 +177,23 @@ nav{
 .btn_lang img{
   width: 20px;
 }
+.language{
+  position: relative;
+}
 .btn_lang_kr{
+  display: none;
   background-color: #fff;
   color: black;
-  display: none;
   position: absolute;
   top: 45px;
   left: 0;
+  z-index: 8;
+}
+.language:hover .btn_lang_kr{
+  display: block !important;
 }
 .language_mb:focus .btn_lang_kr{
-  display: block;
+  display: block !important;
 }
 
 
